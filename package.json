@@ -1,14 +1,14 @@
 {
-  "name": "whistle.script",
+  "name": "whistle.scriptFake",
   "description": "The plugin for the extension script for whistle",
   "version": "1.2.9",
   "author": "avenwu <avenwu@vip.qq.com>",
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/whistle-plugins/whistle.script/issues"
+    "url": "https://github.com/whistle-plugins/whistle.scriptFake/issues"
   },
-  "homepage": "https://github.com/whistle-plugins/whistle.script",
+  "homepage": "https://github.com/whistle-plugins/whistle.scriptFake",
   "keywords": [
     "whistle",
     "proxy",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/whistle-plugins/whistle.script.git"
+    "url": "https://github.com/whistle-plugins/whistle.scriptFake.git"
   },
   "scripts": {
     "dev": "webpack --config ./src/webpack.config.js -w",

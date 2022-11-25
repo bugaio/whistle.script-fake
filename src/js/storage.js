@@ -1,6 +1,6 @@
 
 function getKey(key) {
-  return 'whistle.script/' + key;
+  return 'whistle.scriptFake/' + key;
 }
 
 exports.get = function(key) {
