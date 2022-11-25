@@ -1,5 +1,5 @@
-# whistle.scriptFake
-whistle.scriptFake为[whistle](https://github.com/avwo/whistle)的一个扩展脚本插件，可以直接在界面上引用全局安装的Node模块及Node的内容模块编写脚本操作请求及其响应，所有正常Node程序可以实现的功能，都可以通过该插件实现，包括：
+# whistle.script-fake
+whistle.script-fake为[whistle](https://github.com/avwo/whistle)的一个扩展脚本插件，可以直接在界面上引用全局安装的Node模块及Node的内容模块编写脚本操作请求及其响应，所有正常Node程序可以实现的功能，都可以通过该插件实现，包括：
 
 1. HTTP[s]:
    - 动态设置[whistle规则](https://avwo.github.io/whistle/rules/)
@@ -28,7 +28,7 @@ whistle.scriptFake为[whistle](https://github.com/avwo/whistle)的一个扩展�
 
 3. 安装script插件:
 
-		w2 i whistle.scriptFake
+		w2 i whistle.script-fake
 
 # 使用
 
@@ -37,7 +37,7 @@ whistle.scriptFake为[whistle](https://github.com/avwo/whistle)的一个扩展�
 1. 可以通过 `Plugins->Home->script`打开或右键并选择 `在新标签页中打开` 
 2. 直接访问 [http://local.whistlejs.com/plugin.script](http://local.whistlejs.com/plugin.script/)
 
- ![whistle.scriptFake界面](https://user-images.githubusercontent.com/11450939/126302159-0c533ea7-3bc0-484a-bd30-698d5a7881df.gif)
+ ![whistle.script-fake界面](https://user-images.githubusercontent.com/11450939/126302159-0c533ea7-3bc0-484a-bd30-698d5a7881df.gif)
 
 #### 设置规则
 
@@ -57,7 +57,7 @@ whistle.scriptFake为[whistle](https://github.com/avwo/whistle)的一个扩展�
 	
 	在whistle的Rules配置界面上输入规则:
 	
-		whistle.scriptFake://test www.ifeng.com www.qq.com www.baidu.com echo.websocket.org
+		whistle.script-fake://test www.ifeng.com www.qq.com www.baidu.com echo.websocket.org
 	
 	分别访问[http://www.ifeng.com](http://www.ifeng.com)和[http://www.qq.com](http://www.qq.com)，前者可以正常访问，后者输出 `Hello world.`。
 	
@@ -65,7 +65,7 @@ whistle.scriptFake为[whistle](https://github.com/avwo/whistle)的一个扩展�
 	
 	如果需要通过配置给脚本传递一些额外参数，可以如下配置(注意中间不能有空格):
 	
-		whistle.scriptFake://test(a,b,c) www.ifeng.com www.qq.com www.baidu.com echo.websocket.org
+		whistle.script-fake://test(a,b,c) www.ifeng.com www.qq.com www.baidu.com echo.websocket.org
 	
 	可以在脚本中通过 `process.args` 获取:
 	
@@ -125,8 +125,8 @@ whistle.scriptFake为[whistle](https://github.com/avwo/whistle)的一个扩展�
 	```
 	在whistle的Rules配置界面上输入规则:
 	``` txt
-	# 这里不能用whistle.scriptFake，否则请求不会转发到handleRequest
-	# whistle.scriptFake只会执行handleXxxRules
+	# 这里不能用whistle.script-fake，否则请求不会转发到handleRequest
+	# whistle.script-fake只会执行handleXxxRules
 	# 你也可以通过在handleXxxRules里面设置 script://test(a,b,c)，实现转发
 	script://test www.ifeng.com www.qq.com www.baidu.com echo.websocket.org
 	```
@@ -260,5 +260,5 @@ exports.handleTunnelResWrite = (req, res, options) => {
 
 # License
 
-[MIT](https://github.com/whistle-plugins/whistle.scriptFake/blob/master/LICENSE)
+[MIT](https://github.com/bugaio/whistle.script-fake/blob/master/LICENSE)
 
